@@ -2,6 +2,8 @@ package com.example.models;
 
 import java.sql.Date;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,6 +15,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Document(collection = "EmpExam")
 public class EmpExam {
 
     @Id

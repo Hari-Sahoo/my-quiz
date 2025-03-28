@@ -1,5 +1,7 @@
 package com.example.models;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "questions")
+@Document(collection = "Question")
 public class Question {
 	
 	@Id
